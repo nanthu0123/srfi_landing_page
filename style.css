@@ -1,0 +1,65 @@
+body {
+
+    background-image: url('./img/homeback.png');
+}
+
+header .logo {
+    margin: 25px 25px 0;
+}
+
+header .logo .logo-img {
+    width: 200px;
+    height: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title-img {
+    width: 100%;
+}
+
+.media-logo-container {
+    display: none;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width:1200px) {
+    header .logo {
+        margin: 3%;
+    }
+
+    header .logo .logo-img {
+        width: 35%;
+    }
+
+    main {
+        display: block;
+    }
+
+    .team-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .title-img {
+        width: 100%;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .media-logo-container {
+        display: block;
+    }
+}
